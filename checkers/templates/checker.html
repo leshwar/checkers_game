@@ -1,0 +1,18 @@
+{% load static %}
+
+{% block content %}
+<html lang="en-US">
+	<head>
+		<title>Checkers Game</title>
+		<link rel="stylesheet" type="text/css" href="{% static 'stylesheets.css' %}">
+	</head>
+	<body onresize="resize(htmlBoard);">
+		<div id="options">&nbsp;</div>
+		<div id="board" />
+	</body>
+</html>
+{% endblock %}
+
+{% block js %}
+<script src="{% static 'checkers.js' %}"></script>
+{% endblock %}
